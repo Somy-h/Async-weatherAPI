@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+				integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+				crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" />
+		<link rel="stylesheet" href="style.css"></link>
+</head>
+
+<body>
+	<div class="bg-contatiner">
+		<div class="bg-icons">
+			<span class="bg-icon sun"><i class="fa fa-sun fa-8x"></i></span>
+			<span class="bg-icon wind"><i class="fa fa-wind fa-flip fa-6x"></i></span>
+			<span class="bg-icon cloud"><i class="fa fa-cloud"></i></span>
+			<span class="bg-icon rain"><i class="fa fa-cloud-rain fa-7x"></i></span>
+			<span class="bg-icon snow"><i class="fa fa-snowflake fa-spin fa-8x"></i></span>
+			<span class="bg-icon temp-low"><i class="fa fa-temperature-low fa-6x"></i></span>
+			<span class="bg-icon temp-high"><i class="fa fa-temperature-high fa-5x"></i></span>
+			<span class="bg-icon rainbow"><i class="fa fa-rainbow fa-7x"></i></span>
+		</div>
+		<div class="info-container">
+			<form id="form--getWeather">
+				<input type="text" id="city--input" name="city" placeholder="Enter city name..."/>
+				<button type="submit" id="btn--get-weather">Get weather</button>
+			</form>
+			<div class="weather-container">
+				<spa id="city--name" class="city"></spa>
+				<img id="img--icon" alt="title" src=""/>
+				<div class="weather-info" title="Current Temperature"><span id="temperature"></span> &#8457;</div>
+				<div class="weather-info"><span id="description"></span></div>
+				<div class="weather-info small">H:<span id="temp_max"></span>&#8457; L:<span id="temp_min"></span>&#8457;</div>
+				<table class="weather-info">
+					<tr  >
+						<td>Clouds:</td>
+						<td><span id="clouds"></span>%</td>
+					</tr>
+					<tr>
+						<td>Humidity: </td>
+						<td><span id="humidity"></span></span>%</td>
+					</tr>
+					<tr>
+						<td>Wind:</td>
+						<td><span id="wind"></span></span>m/s</td>
+					</tr>
+					<tr>
+						<td>Pressure:</td>
+						<td><span id="pressure"></span></span>hpa</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>	
+	<script type="text/javascript" src="weather.js"></script>
+	<script type="text/javascript" src="weatherData.js"></script>
+	<script type="text/javascript" src="weatherView.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
