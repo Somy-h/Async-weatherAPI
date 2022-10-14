@@ -17,8 +17,10 @@ class WeatherData {
       },
       weather: weather
     } = data;
+    data = null;
 
-    this.weatherData = {
+    this.weatherData = 
+     {
       cityName, 
       temp, 
       temp_min, 
@@ -28,8 +30,7 @@ class WeatherData {
       cloud,
       wind, 
       weather
-    };
-    data = null;
+    } 
   }
 
   getWeatherData() {
